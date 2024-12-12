@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-4">
+        <a
+          class="navbar-brand d-flex justify-content-center align-items-center"
+          href="#"
+          ><img src="./images/logo.png" alt="logo-weather" class="mx-3 w-25" />
+          <div class="logo-text  d-flex flex-column">
+            <span class="fw-bold fs-5 text-white">Weather</span>
+            tagline goes here
+          </div></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link active mx-2 rounded-pill text-white"
+              aria-current="page"
+              href="#"
+              >Home</a
+            >
+            <a class="nav-link mx-2 rounded-pill text-white" href="#">News</a>
+            <a class="nav-link mx-2 rounded-pill text-white" href="#"
+              >Live cameras</a
+            >
+            <a class="nav-link mx-2 rounded-pill text-white" href="#">Photos</a>
+            <a class="nav-link mx-2 rounded-pill text-white" href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <section
+        class="container py-5 m-auto d-flex justify-content-center flex-column"
+      >
+        <div class="search w-100 position-relative">
+          <input
+            type="search"
+            class="rounded-pill form-control"
+            placeholder="Find your location..."
+          />
+          <button
+            type="submit"
+            class="submit-btn btn btn-primary rounded-pill position-absolute px-5 border-0 overflow-hidden "
+          >
+          <div class="d-flex gap-1 justify-content-center align-items-center">Find My Location
+            <i class="fa-solid  fa-magnifying-glass-location fa-beat-fade fs-2 text-center"></i></div>
+            
+          </button>
+          
+          
+        </div>
+        <div class="alert alert-warning rounded-pill w-50 m-auto text-center d-none" role="alert"></div>
+
+        <div class="container-fluid mt-5">
+          <div class="row rounded-3 overflow-hidden">
+            <div class="today col-md-4 p-0">
+              <div
+                class="header p-2 d-flex justify-content-between align-items-center"
+              >
+                <span class="day"></span>
+                <span class="date"></span>
+              </div>
+              <div class="day-weather p-3">
+                <p class="location"></p>
+                <p class="temp text-white"></p>
+                <img class="w-25" src="" alt="todayWeatherCondition" />
+                <p class="condition"></p>
+                <div
+                  class="moreTodayInfo d-flex justify-content-start align-items-center gap-3"
+                >
+                  <div
+                    class="rain d-flex gap-2 align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-umbrella fs-4"></i>
+                    <span></span>
+                  </div>
+                  <div
+                    class="windSpeed d-flex gap-2 align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-wind fs-4"></i>
+                    <span></span>
+                  </div>
+                  <div
+                    class="windDir d-flex gap-2 align-items-center justify-content-center"
+                  >
+                    <i class="fa-regular fa-compass fs-4"></i>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tomorrow col-md-4 p-0">
+              <div
+                class="header day p-2 d-flex justify-content-center align-items-center"
+              >
+                <span class="day"></span>
+              </div>
+              <div
+                class="day-weather d-flex justify-content-center align-items-center flex-column p-3 mt-5"
+              >
+                <img src="" alt="weather condition" />
+                <p class="temp text-white fw-bold fs-3"></p>
+                <p class="tempSmall fw-semibold"></p>
+                <p class="condition"></p>
+              </div>
+            </div>
+
+            <div class="dayAfterTomorrow col-md-4 p-0">
+              <div
+                class="header day p-2 d-flex justify-content-center align-items-center"
+              >
+                <span class="day">Friday</span>
+              </div>
+              <div
+                class="day-weather d-flex justify-content-center align-items-center flex-column p-3 mt-5"
+              >
+                <img src="" alt="weather condition" />
+                <p class="temp text-white fw-bold fs-3"></p>
+                <p class="tempSmall fw-semibold"></p>
+                <p class="condition"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="inner">
+              <form class="w-100 position-relative">
+                <input
+                  type="search"
+                  class="rounded-pill form-control"
+                  placeholder="Enter your email to subscripe..."
+                />
+                <button
+                  type="submit"
+                  class="submit-btn btn btn-primary rounded-pill position-absolute px-5 border-0"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5 m-auto">
+            <div
+              class="icons d-flex justify-content-center align-items-center gap-2"
+            >
+              <a
+                href="#"
+                class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none"
+              >
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+              <a
+                href="#"
+                class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none"
+              >
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+          <p class="mt-3">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

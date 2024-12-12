@@ -1,0 +1,115 @@
+/* Start Global Variable */
+:root {
+    --mainColor: #1e202b;
+    --secondaryColor: #323544;
+    --thirdColor: #009ad8;
+    --fourthColor: #fff;
+    --fifthColor: #262936;
+    --sixthColor: #bfc1c8;
+  }
+  body {
+    background-color: var(--fifthColor);
+  }
+  /* End Global Variable */
+  /* Start Nav */
+  nav {
+    background-color: var(--mainColor) !important;
+    color: var(--fourthColor) !important;
+  }
+  nav .navbar-collapse {
+    justify-content: end;
+  }
+  nav .nav-link {
+    border: solid 2px transparent;
+    padding: 2px 25px !important;
+  }
+  nav .logo-text{
+    font-size: 13px;
+    color: var(--sixthColor) !important;
+  }
+  nav .nav-link.active,
+  nav .nav-link:hover {
+    border-color: var(--thirdColor);
+    color: var(--thirdColor) !important;
+  }
+  /* End Nav */
+  
+  /* Start Header */
+  header {
+    color: var(--sixthColor);
+    background-image: url("../images/banner.png"),
+      linear-gradient(var(--mainColor), var(--mainColor));
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: contain;
+    /* height: 100vh; */
+  }
+  header .today .header,
+  header .tomorrow .header,
+  header .dayAfterTomorrow .header {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  header .today {
+    background-color: var(--secondaryColor);
+  }
+  header .tomorrow {
+    background-color: var(--fifthColor);
+  }
+  header .dayAfterTomorrow {
+    background-color: var(--secondaryColor);
+  }
+  header .today .location {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  header .today .temp {
+    font-size: 68px;
+    font-weight: 800;
+  }
+  header .condition {
+    color: var(--thirdColor);
+  }
+  header .today .rain i {
+    rotate: 45deg;
+  }
+  div input[type="search"] {
+    padding: 15px !important;
+    background-color: var(--mainColor);
+    border: none;
+    color: var(--fourthColor) !important;
+  }
+  div input[type="search"]::placeholder {
+    color: var(--sixthColor);
+  }
+  div input[type="search"]:focus {
+    background-color: var(--mainColor);
+    box-shadow: none !important;
+  }
+  .submit-btn {
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: var(--thirdColor) !important;
+  }
+  /* End Header */
+  
+  /* Start Footer */
+  footer {
+    background-color: var(--fifthColor);
+  }
+  footer .icons a {
+    width: 40px;
+    height: 40px;
+    color: var(--thirdColor);
+    background-color: var(--mainColor);
+  }
+  footer .icons a:hover {
+    background-color: var(--thirdColor) !important;
+  }
+  footer .icons a:hover i {
+    color: var(--fourthColor);
+  }
+  footer p {
+    color: var(--sixthColor);
+  }
+  /* End Footer */
